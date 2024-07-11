@@ -17,7 +17,7 @@ class ApuestaFactory extends Factory
     public function definition(): array
     {
         return [
-            'id_juego' => Fake()->numberBetween(1, 10),
+            'juego_id' => Fake()->numberBetween(1, 10),
             'fecha' => Fake()->date(),
             'monto' => Fake()->numberBetween(1, 1000),
         ];

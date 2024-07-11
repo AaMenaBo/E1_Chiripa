@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('apuestas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_juego');
+            $table->foreignId('juego_id')->constrained('juegos')->cascadeOnDelete();
             $table->datetime('fecha');
             $table->integer('monto');
             $table->timestamps();

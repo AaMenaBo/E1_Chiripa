@@ -13,4 +13,7 @@ class Juego extends Model
     {
         return $this->hasMany(Apuesta::class);
     }
+    protected $casts = [
+        'juego_de_cartas' => 'boolean',
+    ];
 }

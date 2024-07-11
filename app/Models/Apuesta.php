@@ -12,7 +12,7 @@ class Apuesta extends Model
 
     public function juego()
     {
-        return $this->belongsTo(juego::class, 'id_juego');
+        return $this->belongsTo(juego::class);
     }
     protected $fillable = [
         'id_juego',
